@@ -87,6 +87,11 @@ const DetailPlanet = () => {
             </div>
           ))}
       </div>
+      {loading && <div className="flex items-center justify-center space-x-2 animate-bounce">
+    <div className="w-8 h-8 bg-blue-400 rounded-full"></div>
+    <div className="w-8 h-8 bg-green-400 rounded-full"></div>
+    <div className="w-8 h-8 bg-black rounded-full"></div>
+</div>}
       <div className="flex justify-center">
         <div className="bg-transparan p-10 justify-center">
           <div className="grid grid-cols-2 place-items-center flex">

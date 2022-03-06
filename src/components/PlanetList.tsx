@@ -6,8 +6,6 @@ export const PlanetList = () => {
   const { isLoading, isFetchingNextPage, data, fetchNextPage, hasNextPage } =
     usePlanet();
 
-console.log(data)
-  console.log('tes', data?.pages);
   const planet = useMemo(
     () =>
       data?.pages.flatMap((page) =>
